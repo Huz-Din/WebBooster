@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WebBooster</title>
+    <link rel="shortcut icon" href="img/icon_webbooster.ico" />
+  </head>
+  <body>
+    <section id="catalog" class="catalog">
+      <div class="container">
+        <h3 class="heading__template catalog__heading">Интернет магазин</h3>
+        <div class="catalog__box_for_cards-items">
+          <div class="card__item">
+            <div class="item__img">
+              <img src="img/catalog/01.png" alt="T-shirt" />
+            </div>
+            <div class="item__product">T-shirt</div>
+            <div class="item__price">
+              <div class="item__price_old">4990 р.</div>
+              <div class="item__price_new">2990 р.</div>
+            </div>
+            <a href="#popup" class="item__btn popup-link">заказать</a>
+          </div>
+          <div class="card__item">
+            <div class="item__img">
+              <img src="img/catalog/02.png" alt="Blouse" />
+            </div>
+            <div class="item__product">Blouse</div>
+            <div class="item__price">
+              <div class="item__price_old">4990 р.</div>
+              <div class="item__price_new">2990 р.</div>
+            </div>
+            <a href="#popup" class="item__btn popup-link">заказать</a>
+          </div>
+          <div class="card__item">
+            <div class="item__img">
+              <img src="img/catalog/03.jpg" alt="Coat" />
+            </div>
+            <div class="item__product">Coat</div>
+            <div class="item__price">
+              <div class="item__price_old">4990 р.</div>
+              <div class="item__price_new">2990 р.</div>
+            </div>
+            <a href="#popup" class="item__btn popup-link">заказать</a>
+          </div>
+          <div class="card__item">
+            <div class="item__img">
+              <img
+                class="card__item_img"
+                src="img/catalog/04.png"
+                alt="Dress"
+              />
+            </div>
+            <div class="item__product">Dress</div>
+            <div class="item__price">
+              <div class="item__price_old">4990 р.</div>
+              <div class="item__price_new">2990 р.</div>
+            </div>
+            <a href="#popup" class="item__btn popup-link">заказать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <div class="popup__img">
+            <img src="img/catalog/03.jpg" alt="Джои Миллер" />
+          </div>
+          <div class="popup__form-order">
+            <a href="#" class="popup__close close-popup">X</a>
+            <div class="popup__title">Заполните форму</div>
+            <form action="#" id="form">
+              <input
+                id="formName"
+                class="popup__input _req _name"
+                type="text"
+                name="name"
+                placeholder="Введите ваше имя"
+              />
+              <input
+                id="formPhone"
+                class="popup__input _req _phone"
+                type="phone"
+                name="phone"
+                placeholder="Введите ваш телефон"
+              />
+              <select class="popup__select _req" name="Type">
+                <option value="T-shirt">T-shirt</option>
+                <option value="Blouse">Blouse</option>
+                <option value="Coat">Coat</option>
+                <option value="Dress">Dress</option>
+                <option value="New">Something new</option>
+              </select>
+              <button class="popup__button" type="submit">
+                Оформить заказ
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
